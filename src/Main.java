@@ -1,15 +1,76 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {
-    public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+import java.util.Arrays;
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
+public class Main {
+    public static void main(String[] args) { //task1
+        int[] anIntegerArray = new int[3];
+        anIntegerArray[0] = 1;
+        anIntegerArray[1] = 2;
+        anIntegerArray[2] = 3;
+        float[] realArray = {1.57f, 7.654f, 9.986f};
+        String[] stringTheSeasons = new String[4];
+        stringTheSeasons[0] = "зима";
+        stringTheSeasons[1] = "весна";
+        stringTheSeasons[2] = "лето";
+        stringTheSeasons[3] = "осень";
+        String winter = "зима";
+        String spring = "весна";
+        String summer = "лето";
+        String autumn = "осень";
+        // task2
+        for (int i = 0; i < anIntegerArray.length; i++) {
+            System.out.print(anIntegerArray[i]);
+            if (i != anIntegerArray.length - 1) {
+                System.out.print(", ");
+            } else {
+                break;
+            }
         }
+        System.out.println();
+        for (int k = 0; k < realArray.length; k++) {
+            if (k == realArray.length - 1) {
+                System.out.print(realArray[k]);
+                break;
+            }
+            System.out.print(realArray[k] + ", ");
+        }
+        System.out.println();
+        for (int f = 0; f < stringTheSeasons.length; f++) {
+            if (f == stringTheSeasons.length - 1) {
+                System.out.print(stringTheSeasons[f]);
+                break;
+            }
+            System.out.print(stringTheSeasons[f] + ", ");
+        }
+        //Task 3
+        System.out.println();
+        System.out.println();
+        for (int h = 2; h >= 0; h--) {
+            System.out.print(anIntegerArray[h]);
+            if (h > 0) {
+                System.out.print(", ");
+            }
+        }
+        System.out.println();
+        for (int t = realArray.length - 1; t >= 0; t--) {
+            System.out.print(realArray[t]);
+            if (t > 0) {
+                System.out.print(", ");
+            }
+        }
+        System.out.println();
+        for (int w = stringTheSeasons.length - 1; w >= 0; w--) {
+            System.out.print(stringTheSeasons[w]);
+            if (w > 0) {
+                System.out.print(", ");
+            }
+        }
+        System.out.println();
+        //Task 4
+        for (int i = 0; i < anIntegerArray.length; i++) {
+            if (anIntegerArray[i] % 2 == 1) {
+                anIntegerArray[i] += 1;
+            }
+        }
+        System.out.println(Arrays.toString(anIntegerArray));
     }
 }
