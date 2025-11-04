@@ -34,8 +34,6 @@ public class Main {
             System.out.print(realArray[k] + ", ");
         }
         System.out.println();
-        System.out.println(Arrays.toString(stringTheSeasons));
-        System.out.println("второй способ вывода данных третьего массива");
         for (int f = 0; f < stringTheSeasons.length; f++) {
             if (f == stringTheSeasons.length - 1) {
                 System.out.print(stringTheSeasons[f]);
@@ -43,9 +41,6 @@ public class Main {
             }
             System.out.print(stringTheSeasons[f] + ", ");
         }
-        System.out.println();
-        System.out.println("другой способ вывода данных третьего массива");
-        System.out.println(winter + ", " + spring + ", " + summer + ", " + autumn);
         //Task 3
         System.out.println();
         System.out.println();
